@@ -1,4 +1,3 @@
-package src.questions;
 /**
  * Expected Output:
  * 
@@ -17,16 +16,19 @@ public class JavaQuest2 {
     } else if (a < 9 && a >= 0) {
       System.out.println("a is between 0 and 8");
       // code here ...
+    } else if (a > 9) {
+      System.out.println("a > 9");
     } else {
       System.out.println("a < 0");
     }
 
     String str = "I love Java. I love coding";
-    if (!(str.length() == 27)) { // code here. Fix the bug.
+    // if (!(str.length() == 27)) { // code here. Fix the bug.
+    if (str.length() == 27) {
       System.out.println("str length=27");
-    } else if () { // code here ... add the condition
+    } else if (str.length() < 27) { // code here ... add the condition
       System.out.println("str length < 27");
-    } else if () { // code here ... complete the code
+    } else if (str.length() > 27) { // code here ... complete the code
       System.out.println("str length > 27");
     }
 
@@ -39,17 +41,24 @@ public class JavaQuest2 {
     int year1 = 2009;
     // Program a condition to check if it is a leap year.
     // But should NOT print anything.
-    if () { // code here ...
+    if (year1 % 4 == 0 && (!(year1 % 100 == 0) || year1 % 400 == 0)) { // code here ...
       System.out.println("2009 is a leap year.");
     }
     int year2 = 2020;
     // same as the above, but it will print out.
-    if () { // code here ...
-      System.out.println("2009 is a leap year.");
+    if (year2 % 4 == 0 && (!(year2 % 100 == 0) || year2 % 400 == 0)) { // code here ...
+      // System.out.println("2009 is a leap year.");
+      System.out.println("2020 is a leap year.");
     }
     int year3 = 2400;
     // code here ... same as the above, but it will print out.
+    if (year3 % 4 == 0 && (!(year3 % 100 == 0) || year3 % 400 == 0)) {
+      System.out.println("2400 is a leap year.");
+    }
     int year5 = 2100;
     // code here ...same as the above, but it will NOT print out.
+    if (year5 % 4 == 0 && (!(year5 % 100 == 0) || year5 % 400 == 0)) {
+      System.out.println("2100 is a leap year.");
+    }
   }
 }
