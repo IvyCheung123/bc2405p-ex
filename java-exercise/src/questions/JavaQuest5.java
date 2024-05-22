@@ -10,7 +10,7 @@ public class JavaQuest5 {
   // Count the target of character in a String.
   public static void main(String[] args) {
     String str = "Welcome to the coding bootcamp."; // You should not change this line
-    char target = 'c'; // Update this target to test the logic
+    char target = 'c'; // Update this taget to test the logic
     int count = 0;
     // Use a loop to count the target of character in a String.
     // code here ...
