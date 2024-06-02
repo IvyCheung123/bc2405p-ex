@@ -64,16 +64,44 @@ public class JavaWeek3 {
     // Question 6
     /*
     String str3 = "";
-    for (byte i = 127; i < 128; i++) { // 127 -128 ... back to 127 to -128 (-128 to 127)
+    for (byte i = 127; i < 128; i++) { // 127 -128 ... 127 (-128 to 127)
       if (i < 0) {
         continue;
       }
       str3 += i;
     }
     System.out.println(str3); // infinite loop
-    // i < 128 = infinite loop
-    // i < -128 = empty line
     */
+    String str3 = "";
+    for (byte i = -128; i < -126; i++) { // -128 -127
+      /*
+      if (i < 0) {
+        continue;
+      }
+      */
+      str3 += i;
+    }
+    System.out.println("Question 6 (optional) = " + str3); // -128-127
+
+    String str4 = "";
+    for (byte i = 127; i > -126; i--) { // 127 126 ... -125
+      if (i < 0) {
+        continue;
+      }
+      str4 += i;
+    }
+    System.out.println("Question 6 (optional) = " + str4); // 127126...0
+
+    String str5 = "";
+    for (byte i = 127; i < -126; i++) { // 127 -128 -127
+      /*
+      if (i < 0) {
+        continue;
+      }
+      */
+      str5 += i;
+    }
+    System.out.println("Question 6 (optional) = " + str5); // empty line
     
     // Question 7
     int[] integers = {20, 10, 40};
@@ -98,21 +126,22 @@ public class JavaWeek3 {
     }
     System.out.println(sum); // runtime error
     */
-    String[] strings = new String[3];
-    String sum = "";
+    String[] strings2 = new String[3];
+    String sum2 = "";
     for (int i = 0; i < 3; i++) { // 0 1 2
-      strings[i] = String.valueOf(i);
-      sum += strings[i];
+      strings2[i] = String.valueOf(i);
+      sum2 += strings2[i];
     }
-    System.out.println("Question 8 (optional) = " + sum); // 012
+    System.out.println("Question 8 (optional) = " + sum2); // 012
     
-    String[] strs = new String[] {"10", "11", "12"};
-    String sums = "";
-    for (int i = 0; i < 3; i++) { // 0 1 2
-      strs[i] = String.valueOf(i); // what is valueOf()?
-      sums += strs[i];
+    String[] strings3 = new String[] {"11", "12", "13", "14", "15"};
+    String sum3 = "";
+    for (int i = 0; i < strings3.length; i++) { // 0 1 2 3 4
+      strings3[i] = String.valueOf(10); // what is valueOf()?
+      sum3 += strings3[i];
     }
-    System.out.println("Question 8 (optional) = " + sums); // 012
+    System.out.println("Question 8 (optional) = " + sum3); // 1010101010
+    // String.valueOf("y") -> yyyyy
     
     // Question 9
     System.out.println("Question 9 = ");

@@ -18,17 +18,29 @@ public class JavaQuest10 {
 
     Scanner input = new Scanner(System.in);
 
-    System.out.print("Input an index for inserting the value: ");
+    // System.out.print("Input an index for inserting the value: ");
+    System.out.print("Input a Index Position: ");
     int indexPosition = input.nextInt();
 
-    System.out.print("Input the value: ");
+    // System.out.print("Input the value: ");
+    System.out.print("Input a new Value: ");
     int newValue = input.nextInt();
+
+    input.close();
 
     System.out.println("Original Array : " + Arrays.toString(my_array));
 
     // code here ...
+    int[] newArr = new int[my_array.length];
 
-    // my_array = newArr;
+    for (int i = my_array.length - 1; i > indexPosition; i--) {
+      my_array[i] = my_array[i - 1];
+    }
+    
+    my_array[indexPosition] = newValue;
+    newArr = my_array;
+
     System.out.println("New Array: " + Arrays.toString(newArr));
+    
   }
 }
