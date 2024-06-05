@@ -33,10 +33,10 @@ public class JavaQuest10 {
     // code here ...
     int[] newArr = new int[my_array.length];
 
-    for (int i = my_array.length - 1; i > indexPosition; i--) {
+    for (int i = my_array.length - 1; i > indexPosition; i--) { // 
       my_array[i] = my_array[i - 1];
     }
-    
+
     my_array[indexPosition] = newValue;
     newArr = my_array;
 
