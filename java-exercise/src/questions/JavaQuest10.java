@@ -33,7 +33,7 @@ public class JavaQuest10 {
     // code here ...
     int[] newArr = new int[my_array.length];
 
-    for (int i = my_array.length - 1; i > indexPosition; i--) { // 
+    for (int i = my_array.length - 1; i > indexPosition; i--) { // 9 8 7 6 5 4 3 ... 0
       my_array[i] = my_array[i - 1];
     }
 
